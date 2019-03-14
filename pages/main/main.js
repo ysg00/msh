@@ -18,6 +18,11 @@ var pageObject = {
       url: '../index/index'
     })
   },
+  toReservation: function () {
+    wx.navigateTo({
+      url: '../reserve/reserve'
+    })
+  },
   setPlain: function (e) {
     this.setData({
       plain: !this.data.plain

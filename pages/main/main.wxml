@@ -1,7 +1,7 @@
 <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="toHome" hover-class="other-button-hover"> 回首页 </button>
 <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="primary"> 预约 </button>
+        disabled="{{disabled}}" bindtap="toReservation"> 预约 </button>
 <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="warn"> 变更 </button>
 <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
