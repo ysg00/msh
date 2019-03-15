@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/main/main",
-    "pages/reserve/reserve"
+    "pages/reserve/reserve",
+    "pages/change/change",
+    "pages/confirm_change/confirm_change",
+    "pages/payment_change/payment_change",
+    "pages/payment_reserve/payment_reserve"
   ],
   "window":{
     "backgroundTextStyle":"light",
