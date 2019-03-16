@@ -1,0 +1,18 @@
+<!--pages/confirm_change/confirm_change.wxml-->
+<view class='body'>  
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='top'> 
+    <text>您的预约将从</text>
+    <text class='ori'>{{ori_date}}</text>
+    <text>变成</text>
+    <text class='mod'>{{mod_date}}</text>
+  </view>
+
+  <button formtype="submit" tyep="primary" bindtap='payment'>确定</button>
+  <button formtype="reset" bindtap='link'>重新选择</button>
+  </form>
+  <button bindtap="home">返回主页</button>
+</view>
+
+
+

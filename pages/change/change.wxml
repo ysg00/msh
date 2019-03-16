@@ -1,0 +1,12 @@
+<!--pages/change/change.wxml-->
+<view class = "body">
+  <view class = 'title'>
+    <text>已有的预约</text>
+  </view>
+  <view class = "row">
+      <text class="date">{{date}}</text>
+      <!-- <text>{{date}}</text> -->
+      <button bindtap='link' class='btn'>变更</button>
+  </view>
+    <button bindtap="home">返回主页</button>
+</view>
