@@ -12,7 +12,7 @@ Page({
   //     url: 'choose date'
   //   })
   // },
-  home:function(){
+  home: function () {
     wx.navigateTo({
       url: "/pages/main/main"
     })
@@ -35,7 +35,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    
+
   },
 
   /**

@@ -5,14 +5,14 @@ Page({
    * Page initial data
    */
   data: {
-    ori_date:'02/02/2019',
-    mod_date:'02/03/2019'
+    ori_date: '02/02/2019',
+    mod_date: '02/03/2019'
   },
 
-  formSubmit:function(e){
-    
+  formSubmit: function (e) {
+
   },
-  payment:function(){
+  payment: function () {
     wx.navigateTo({
       url: '/pages/payment_change/payment_change?date=02/03/2019'
     })
