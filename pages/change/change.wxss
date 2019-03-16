@@ -1,0 +1,25 @@
+/* pages/change/change.wxss */
+page{
+   height: 100%;
+   width: 100%;
+}
+.body{
+  display:flex;
+  flex-direction:column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.date{
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}
+.btn{
+  width: 50px;
+  height: 30px;
+  font-size: 10px;
+}
