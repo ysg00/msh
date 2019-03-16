@@ -8,12 +8,37 @@
     "pages/change/change",
     
     "pages/payment_change/payment_change",
-    "pages/payment_reserve/payment_reserve"
+    "pages/payment_reserve/payment_reserve",
+    "pages/modify/modify"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+
+"tabBar": {
+  "color": "#a9b7b7",
+  "selectedColor": "#11cd6e",
+  "borderStyle": "white",
+  "list": [
+    {
+      "selectedIconPath": "images/首页.png",
+      "iconPath": "images/首页.png",
+      "pagePath": "pages/main/main",
+      "text": "首页"
+    },
+
+    {
+      "selectedIconPath": "images/我的.png",
+      "iconPath": "images/我的.png",
+      "pagePath": "pages/main/main",
+      "text": "我的信息"
+    }
+
+  ],
+      "position": "bottom"
+}
+
 }
