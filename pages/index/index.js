@@ -7,16 +7,43 @@ Page({
     motto: '登你妈的录',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    auth: true
   },
   //事件处理函数
+
+  showok: function () {
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+
+  modalcnt: function () {
+    wx.showModal({
+      title: '提示',
+      content: '请确认您的权限',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('确定')
+          auth: true
+          console.log(auth)
+        } else if (res.cancel) {
+          console.log('取消')
+        }
+      }
+    })
+  },
+
+
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
   toMain: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../main/main'
     })
   },
@@ -49,11 +76,38 @@ Page({
     }
   },
   getUserInfo: function(e) {
+    var that = this
+    if (!that.data.auth){
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+
+    wx.showToast({
+      title: '失败，无权限',
+      icon: 'loading',
+      duration: 2000
+    })
+  }
+
+    else if (that.data.auth) {
+      console.log(e)
+      app.globalData.userInfo = e.detail.userInfo
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      })
+
+      wx.showToast({
+        title: '成功',
+        icon: 'success',
+        duration: 2000
+      })
+    }
+
+    
+
   }
 })

@@ -23,6 +23,11 @@ var pageObject = {
       url: '../reserve/reserve'
     })
   },
+  toModify: function () {
+    wx.navigateTo({
+      url: '../modify/modify'
+    })
+  },
   setPlain: function (e) {
     this.setData({
       plain: !this.data.plain
