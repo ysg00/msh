@@ -1,0 +1,10 @@
+<!--pages/payment_change/payment_change.wxml-->
+<view class='pass'>{{date}}</view>
+<text class='total'>您即将被收取{{charge}}元</text>
+<view class='free'>
+  <button wx:if="{{free_change !=''}}" class="btnf" bindtap='use'>
+    您有一次免费更改的机会(点击使用)
+  </button>
+
+  <button class="btn" type="primary" bindtap='payment'>确定</button>
+</view>
