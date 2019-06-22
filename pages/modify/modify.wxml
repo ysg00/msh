@@ -1,0 +1,37 @@
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="getinfomation"> 获取我的信息 </button>
+您所选择时间及教室为：
+<view class = "section">
+日期：{{dateinfo}}
+</view>
+<view class = "section">
+时间：{{timeinfo}}
+</view>
+<view class = "section">
+教室：{{roominfo}}
+</view>
+您想将以上信息更改为：
+<view class="section" >  
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" mode = "selector">  
+    <view class="picker">  
+      教室：{{objectArray[index]}}  
+    </view>  
+  </picker>  
+</view>  
+
+<view class="section">  
+  <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">  
+    <view class="picker">  
+     时间 : {{times}}
+    </view>  
+  </picker>  
+</view>  
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">  
+    <view class="picker">  
+      日期: {{dates}}  
+    </view>  
+  </picker>  
+</view>  
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="toHome"> 确认并回到主页面 </button>

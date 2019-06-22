@@ -21,7 +21,7 @@
     {
       "selectedIconPath": "images/首页.png",
       "iconPath": "images/首页.png",
-      "pagePath": "pages/main/main",
+      "pagePath": "pages/index/index",
       "text": "首页"
     },
 

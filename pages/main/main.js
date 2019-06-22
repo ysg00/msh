@@ -1,3 +1,5 @@
+var app = getApp();
+
 var types = ['default', 'primary', 'warn']
 var pageObject = {
   data: {
@@ -14,9 +16,10 @@ var pageObject = {
     })
   },
   toHome: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../index/index'
     })
+
   },
   toReservation: function () {
     wx.navigateTo({
@@ -27,6 +30,7 @@ var pageObject = {
     wx.navigateTo({
       url: '../modify/modify'
     })
+    
   },
   setPlain: function (e) {
     this.setData({
